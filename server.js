@@ -11,7 +11,7 @@ http.listen(PORT, ()=>{
 });
 
 app.get('/', (req, res) =>{
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "/public")
 });
 
 app.use(express.static('public'));
